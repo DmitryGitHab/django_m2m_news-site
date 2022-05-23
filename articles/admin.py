@@ -15,7 +15,7 @@ class ArticleTagInlineFormset(BaseInlineFormSet):
                 else:
                     raise ValidationError('Главной может быть только одна тема')
             if not is_main:
-                raise ValidationError('Выберите главный раздел')
+                raise ValidationError('Укажите главный раздел')
             # В form.cleaned_data будет словарь с данными
             # каждой отдельной формы, которые вы можете проверить
             # вызовом исключения ValidationError можно указать админке о наличие ошибки
